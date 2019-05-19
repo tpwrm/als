@@ -17,8 +17,9 @@ export class DataItem {
     templateUrl: "./items.component.html",
 })
 export class ItemsComponent implements OnInit {
-    animalItems: Item[];
+    animalsItems: Item[];
     fruitsItems: Item[];
+    colorsItems: Item[];
 
    // public tabs: Array<DataItem>;
 
@@ -35,7 +36,8 @@ export class ItemsComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.animalItems = this.itemService.getItemsByType("animals");
+        this.animalsItems = this.itemService.getItemsByType("animals");
         this.fruitsItems = this.itemService.getItemsByType("fruits");
+        this.colorsItems = this.itemService.getItemsByType("colors");
     }
 }
