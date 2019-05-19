@@ -1,0 +1,24 @@
+<ActionBar [title]="item.name" class="action-bar"></ActionBar>
+<FlexboxLayout flexDirection="column" class="page">
+    <FlexboxLayout class="m-15">
+        <Label class="h2" [text]="item.name"></Label>
+        
+        <VideoPlayer
+            [src]="item.videoPath"
+            autoplay="true"
+            height="300"
+            controls="true"
+            (finishedEvent)="videoFinished()">
+          </VideoPlayer>
+          
+          <!--
+          <VideoPlayer
+            src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+            autoplay="true"
+            height="300"
+            controls="true"
+            finished="videoFinished()">
+          </VideoPlayer>
+          -->
+    </FlexboxLayout>
+</FlexboxLayout>
