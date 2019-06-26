@@ -2,8 +2,9 @@ import {ImageSource, fromFile, fromResource, fromBase64} from "tns-core-modules/
 
 export interface Item {
     id: number;
-    type: string;
+    category: string;
     name: string;
+    imgType: string;
     imgPath: string;
     img: ImageSource;
     videoPath: string;

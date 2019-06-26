@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from "@angular/core";
 
 import { Item } from "./item";
 import { ItemService } from "./item.service";
+import { ObservableArray } from "tns-core-modules/data/observable-array/observable-array";
 
 //import { TabView, TabViewItem, SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view";
 
@@ -21,6 +22,8 @@ export class ItemsComponent implements OnInit {
     fruitsItems: Item[];
     colorsItems: Item[];
 
+   public isBusy = true;
+
    // public tabs: Array<DataItem>;
 
     // This pattern makes use of Angular’s dependency injection implementation to inject an instance of the ItemService service into this class.
@@ -36,8 +39,21 @@ export class ItemsComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.animalsItems = this.itemService.getItemsByType("animals");
-        this.fruitsItems = this.itemService.getItemsByType("fruits");
-        this.colorsItems = this.itemService.getItemsByType("colors");
+        this.itemService.init();
+        this.buildArrays("");
+
+        console.log("called init \n");
     }
+
+    buildArrays(args:any) {
+        console.log(" args " + args);
+
+        this.animalsItems = this.itemService.getItemsByCategory("animals");
+        this.fruitsItems = this.itemService.getItemsByCategory("fruits");
+        this.colorsItems = this.itemService.getItemsByCategory("colors");
+
+        this.isBusy = false;
+    }
+
+
 }
