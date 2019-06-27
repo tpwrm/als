@@ -44,15 +44,17 @@ export class ItemService {
             console.log("File default-categories.json parsed!");
 
             jsonData.forEach(element => {
-                this.items.push(element);
+                if (element.disabled == false) {
+                    this.items.push(element);
+                }
             });
         }
     }
 
     getAllItems(): Item[] {
         for (let _i = 0; _i < this.items.length; _i++) {
-            this.items[_i].img = <ImageSource> fromFile(this.items[_i].imgPath);
-            console.log(this.items[_i].imgPath);
+                this.items[_i].img = <ImageSource> fromFile(this.items[_i].imgPath);
+                console.log(this.items[_i].imgPath);
         }
 
         return this.items;

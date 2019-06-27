@@ -1,4 +1,4 @@
-import {ImageSource, fromFile, fromResource, fromBase64} from "tns-core-modules/image-source";
+import {ImageSource} from "tns-core-modules/image-source";
 
 export interface Item {
     id: number;
@@ -8,4 +8,5 @@ export interface Item {
     imgPath: string;
     img: ImageSource;
     videoPath: string;
+    disabled: boolean;
 }
