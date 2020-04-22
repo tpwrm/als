@@ -1,0 +1,7 @@
+<ListView [items]="items">
+    <ng-template  let-item="item">
+        <div>
+            <Image margin="50px" [nsRouterLink]="['/'+item.type, item.id]"  [src]="item.imgPath" class="list-group-item" (tap)="onTap($event, item.id)"></Image>
+        </div>
+    </ng-template>
+</ListView>

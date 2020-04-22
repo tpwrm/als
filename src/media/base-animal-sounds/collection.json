@@ -1,0 +1,19 @@
+{
+"name": "base-animal-sound",
+"display-name": "animali",
+"uuid": "a36eaf49-b2aa-4d07-a90d-eac516e94893",
+"category": "animals",
+"locale": "it",
+/* ~/media/images/animals/*/
+"items": [
+    { "id": "472bc3ede20ba1972d65a8e98d190eb2dfeac810", "title": "Mucca", "iconType": "png", "icon": "mucca.png",  "video": "mucca.mp4", "disabled" : false },
+    { "id": "5790de85c4a48358993dca0ec28570cc37711c8c", "title": "Gatto", "iconType": "png", "icon": "gatto.png",  "video": "gatto.mp4", "disabled" : false },
+    { "id": "5da67074a4f6ebc6cf5fff675054754f2efef20c", "title": "Cane", "iconType": "png", "icon": "cane.png",  "video": "cane.mp4", "disabled" : false },
+    { "id": "c247364e07cdee5ccec91475667d959183d8b8c7", "title": "Gallina", "iconType": "png", "icon": "gallina.png",  "video": "gallo.mp4", "disabled" : false },
+    { "id": "0fcadd27f99e5bdf4d3bcc4e1e0e1a6e624852f3", "title": "Maiale", "iconType": "png", "icon": "maiale.png",  "video": "maiale.mp4", "disabled" : false },
+    { "id": "3f8d7f47649947a4fc5048d1f7068d2fa6e71902", "title": "Pecora", "iconType": "png", "icon": "pecora.png",  "video": "pecora.mp4", "disabled" : false },
+    { "id": "13aa8e3113374d9553b848c4668eb0c383bf533f", "title": "Cavallo", "iconType": "png", "icon": "cavallo.png",  "video": "cavallo.mp4", "disabled" : false },
+    { "id": "819513c187518fee6fc5dc671960ad7892f226c9", "title": "Elefante", "iconType": "png", "icon": "elefante.png",  "video": "elefante.mp4", "disabled" : false },
+    { "id": "442ecde5dc017b5ed2675bf277ca455194133be0", "title": "Leone", "iconType": "png", "icon": "leone.png",  "video": "leone.mp4", "disabled" : false }
+    ]
+}

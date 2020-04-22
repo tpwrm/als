@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 
-import { Item } from "./item";
+import { Item } from "./item.model";
 import {ImageSource, fromFile, fromResource, fromBase64} from "tns-core-modules/image-source";
 import { knownFolders, Folder, File} from "tns-core-modules/file-system/file-system";
 import { ObservableArray, ChangedData } from "tns-core-modules/data/observable-array/observable-array";
@@ -9,7 +9,7 @@ import { ObservableArray, ChangedData } from "tns-core-modules/data/observable-a
 @Injectable({
     providedIn: "root"
 })
-export class ItemService {
+export class ItemService {  
 
     items : Item [] = new Array<Item>();
 
@@ -30,7 +30,6 @@ export class ItemService {
                 console.log("file in mediDir " + entity.path);
             });
         }).catch((err) => {
-            // Failed to obtain folder's contents.
             console.log(err.stack);
         });
 
@@ -76,6 +75,24 @@ export class ItemService {
     }
 
     getItem(id: number): Item {
-        return this.items.filter(item => item.id === id)[0];
+        return this.getItemInternal(id, this.items);
+
+        //return this.items.filter(item => item.id === id)[0];
+    }
+
+    private getItemInternal(id: number, items : Item[]): Item {
+        let result : Item = null;
+
+        items.forEach(item => {
+            if (result == null) {
+                if (item.id === id) {
+                    result = item;
+                } else if (item.items != null) {
+                    result = this.getItemInternal(id, item.items);
+                }
+            }
+        });
+
+        return result;
     }
 }

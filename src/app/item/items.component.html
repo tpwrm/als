@@ -27,26 +27,35 @@ class names available for styling your app at https://docs.nativescript.org/ui/t
 <ActivityIndicator [busy]="isBusy" [visibility]="isBusy ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
 
 <TabView selectedIndex="0" selectedColor="#FF0000">
-    <StackLayout class="page" *tabItem="{title: 'Frutta'}">
-        <ListView [items]="fruitsItems" class="list-group">
+    <StackLayout class="page" *tabItem="{title: 'Talk', iconSource: 'res://volume'}" id="atalkPage">
+        <ListView [items]="atalkItems" class="list-group">
             <ng-template  let-item="item">
                 <div>
-                    <Image [nsRouterLink]="['/item', item.id]"  [src]="item.img" class="list-group-item"></Image>
+                    <Image margin="40px" [nsRouterLink]="['/'+item.type, item.id]"  [src]="item.img" class="list-group-item"  (tap)="onTap($event, item.id)"></Image>
                 </div>
             </ng-template>
         </ListView>
     </StackLayout>
-    <StackLayout class="page" *tabItem="{title: 'Animali'}">
+    <StackLayout class="page" *tabItem="{title: 'Frutta', iconSource: 'res://apple'}" id="fruttaPage">
+        <ListView [items]="fruitsItems" class="list-group">
+            <ng-template  let-item="item">
+                <div>
+                    <Image margin="40px" [nsRouterLink]="['/'+item.type, item.id]"  [src]="item.img" class="list-group-item"></Image>
+                </div>
+            </ng-template>
+        </ListView>
+    </StackLayout>
+    <StackLayout class="page" *tabItem="{title: 'Animali', iconSource: 'res://paw'}" id="animaliPage">
             <ListView [items]="animalsItems" class="list-group">
                 <ng-template let-item="item">
-                    <Image [nsRouterLink]="['/item', item.id]"  [src]="item.img" class="list-group-item"></Image>
+                    <Image margin="40px" [nsRouterLink]="['/'+item.type, item.id]"  [src]="item.img" class="list-group-item"></Image>
                 </ng-template>
             </ListView>
     </StackLayout>
-    <StackLayout class="page" *tabItem="{title: 'Colori'}">
+    <StackLayout class="page" *tabItem="{title: 'Colori', iconSource: 'res://palette'}" id="coloriPage">
             <ListView [items]="colorsItems" class="list-group">
                 <ng-template let-item="item">
-                    <Image [nsRouterLink]="['/item', item.id]"  [src]="item.img" class="list-group-item"></Image>
+                    <Image margin="40px" [nsRouterLink]="['/'+item.type, item.id]"  [src]="item.img" class="list-group-item"></Image>
                 </ng-template>
             </ListView>
     </StackLayout>

@@ -1,24 +1,509 @@
 [
-    { "id": 1, "category": "fruits", "name": "Mela", "imgType": "png", "imgPath": "~/media/images/fruits/mela.png", "img": null, "videoPath": "~/media/videos/mela.mp4", "disabled" : false },
-    { "id": 2, "category": "fruits", "name": "Banana", "imgType": "png", "imgPath": "~/media/images/fruits/banana.png", "img": null, "videoPath": "~/media/videos/banana.mp4", "disabled" : false },
-    { "id": 3, "category": "fruits", "name": "Pera", "imgType": "png", "imgPath": "~/media/images/fruits/pera.png", "img": null, "videoPath": "~/media/videos/pera.mp4", "disabled" : false },
-    { "id": 4, "category": "fruits", "name": "Uva", "imgType": "png", "imgPath": "~/media/images/fruits/uva.png", "img": null, "videoPath": "~/media/videos/uva.mp4", "disabled" : true },
-    { "id": 5, "category": "fruits", "name": "Arancia", "imgType": "png", "imgPath": "~/media/images/fruits/arancia.png", "img": null, "videoPath": "~/media/videos/arancia.mp4", "disabled" : true },
-    { "id": 6, "category": "fruits", "name": "Fragola", "imgType": "png", "imgPath": "~/media/images/fruits/fragola.png", "img": null, "videoPath": "~/media/videos/fragola.mp4", "disabled" : true },
-    { "id": 7, "category": "fruits", "name": "Limone", "imgType": "png", "imgPath": "~/media/images/fruits/limone.png", "img": null, "videoPath": "~/media/videos/limone.mp4", "disabled" : true },
-    { "id": 8, "category": "fruits", "name": "Cilieggie", "imgType": "png", "imgPath": "~/media/images/fruits/ciliegge.png", "img": null, "videoPath": "~/media/videos/ciliegge.mp4", "disabled" : true },
-    { "id": 9, "category": "animals", "name": "Mucca", "imgType": "png", "imgPath": "~/media/images/animals/mucca.png", "img": null, "videoPath": "~/media/videos/mucca.mp4", "disabled" : false },
-    { "id": 10, "category": "animals", "name": "Gatto", "imgType": "png", "imgPath": "~/media/images/animals/gatto.png", "img": null, "videoPath": "~/media/videos/gatto.mp4", "disabled" : false },
-    { "id": 11, "category": "animals", "name": "Cane", "imgType": "png", "imgPath": "~/media/images/animals/cane.png", "img": null, "videoPath": "~/media/videos/cane.mp4", "disabled" : false },
-    { "id": 12, "category": "animals", "name": "Gallina", "imgType": "png", "imgPath": "~/media/images/animals/gallina.png", "img": null, "videoPath": "~/media/videos/gallo.mp4", "disabled" : false },
-    { "id": 13, "category": "animals", "name": "Maiale", "imgType": "png", "imgPath": "~/media/images/animals/maiale.png", "img": null, "videoPath": "~/media/videos/maiale.mp4", "disabled" : false },
-    { "id": 14, "category": "animals", "name": "Pecora", "imgType": "png", "imgPath": "~/media/images/animals/pecora.png", "img": null, "videoPath": "~/media/videos/pecora.mp4", "disabled" : false },
-    { "id": 15, "category": "animals", "name": "Cavallo", "imgType": "png", "imgPath": "~/media/images/animals/cavallo.png", "img": null, "videoPath": "~/media/videos/cavallo.mp4", "disabled" : false },
-    { "id": 16, "category": "animals", "name": "Elefante", "imgType": "png", "imgPath": "~/media/images/animals/elefante.png", "img": null, "videoPath": "~/media/videos/elefante.mp4", "disabled" : false },
-    { "id": 18, "category": "animals", "name": "Leone", "imgType": "png", "imgPath": "~/media/images/animals/leone.png", "img": null, "videoPath": "~/media/videos/leone.mp4", "disabled" : false },
-    { "id": 19, "category": "colors", "name": "Rosso", "imgType": "png", "imgPath": "~/media/images/colors/rosso.png", "img": null, "videoPath": "~/media/videos/rosso.mp4", "disabled" : false },
-    { "id": 20, "category": "colors", "name": "Giallo", "imgType": "png", "imgPath": "~/media/images/colors/giallo.png", "img": null, "videoPath": "~/media/videos/giallo.mp4", "disabled" : false },
-    { "id": 21, "category": "colors", "name": "Blu", "imgType": "png", "imgPath": "~/media/images/colors/blu.png", "img": null, "videoPath": "~/media/videos/blu.mp4", "disabled" : false },
-    { "id": 22, "category": "colors", "name": "Arancio", "imgType": "png", "imgPath": "~/media/images/colors/arancio.png", "img": null, "videoPath": "~/media/videos/arancio.mp4", "disabled" : true },
-    { "id": 23, "category": "colors", "name": "Verde", "imgType": "png", "imgPath": "~/media/images/colors/verde.png", "img": null, "videoPath": "~/media/videos/verde.mp4", "disabled" : false }
-]
+    {
+       "id":1,
+       "type":"sub-items",
+       "category":"atalk",
+       "name":"Io",
+       "imgType":"png",
+       "imgPath":"~/media/images/atalk/io.png",
+       "img":null,
+       "audioPath":"~/media/audio/io.mp3",
+       "disabled":false,
+       "items": [
+            {
+               "id":10204,
+               "type":"sub-items",
+               "category":"verbo",
+               "name":"Giocare",
+               "imgType":"png",
+               "imgPath":"~/media/images/atalk/giocare.png",
+               "img":null,
+               "audioPath":"~/media/audio/giocare.mp3",
+               "disabled":false,
+               "items": []
+            },
+            {
+               "id":10202,
+               "type":"sub-items",
+               "category":"verbo",
+               "name":"Disegnare",
+               "imgType":"png",
+               "imgPath":"~/media/images/atalk/disegnare.png",
+               "img":null,
+               "audioPath":"~/media/audio/disegnare.mp3",
+               "disabled":false,
+               "items": []
+            },
+            {
+               "id":10205,
+               "type":"sub-items",
+               "category":"verbo",
+               "name":"Mangiare",
+               "imgType":"png",
+               "imgPath":"~/media/images/atalk/mangiare.png",
+               "img":null,
+               "audioPath":"~/media/audio/mangiare.mp3",
+               "disabled":false,
+               "items": []
+            },
+            {
+                "id":102,
+                "type":"sub-items",
+                "category":"verbo",
+                "name":"Andare",
+                "imgType":"png",
+                "imgPath":"~/media/images/atalk/andare.png",
+                "img":null,
+                "audioPath":"~/media/audio/andare.mp3",
+                "disabled":false,
+                "items": []
+            },
+            {
+               "id":10203,
+               "type":"sub-items",
+               "category":"verbo",
+               "name":"Dormire",
+               "imgType":"png",
+               "imgPath":"~/media/images/atalk/dormire.png",
+               "img":null,
+               "audioPath":"~/media/audio/dormire.mp3",
+               "disabled":false,
+               "items": []
+            }
+       ]
+    },
+    {
+       "id":2,
+       "type":"sub-items",
+       "category":"atalk",
+       "name":"Mamma",
+       "imgType":"png",
+       "imgPath":"~/media/images/atalk/mamma.png",
+       "img":null,
+       "videoPath":null,
+       "audioPath":"~/media/audio/mamma.mp3",
+       "disabled":false,
+       "items": [
+        {
+             "id":201,
+             "type":"sub-items",
+             "category":"verbo",
+             "name":"Dammi",
+             "imgType":"png",
+             "imgPath":"~/media/images/atalk/dammi.png",
+             "img":null,
+             "audioPath":"~/media/audio/dammi.mp3",
+             "disabled":false,
+             "items": [
+                {
+                     "id":20101,
+                     "type":"sub-items",
+                     "category":"verbo",
+                     "name":"Acqua",
+                     "imgType":"png",
+                     "imgPath":"~/media/images/atalk/acqua.png",
+                     "img":null,
+                     "audioPath":"~/media/audio/acqua.mp3",
+                     "disabled":false,
+                     "items": []
+                 },
+                 {
+                    "id":20102,
+                    "type":"sub-items",
+                    "category":"verbo",
+                    "name":"Succo",
+                    "imgType":"png",
+                    "imgPath":"~/media/images/atalk/succo.png",
+                    "audioPath":"~/media/audio/succo.mp3",
+                    "img":null,
+                    "disabled":false,
+                    "items": []
+                }
+            ]
+         },
+         {
+            "id":202,
+            "type":"sub-items",
+            "category":"verbo",
+            "name":"Bagno",
+            "imgType":"png",
+            "imgPath":"~/media/images/atalk/bagno.png",
+            "img":null,
+            "audioPath":"~/media/audio/bagno.mp3",
+            "disabled":false,
+            "items": []
+        },
+         {
+               "id":203,
+               "type":"sub-items",
+               "category":"verbo",
+               "name":"Basta",
+               "imgType":"png",
+               "imgPath":"~/media/images/atalk/basta.png",
+               "img":null,
+               "audioPath":"~/media/audio/basta.mp3",
+               "disabled":false
+         },
+         {
+            "id":204,
+            "type":"sub-items",
+            "category":"verbo",
+            "name":"Scusa",
+            "imgType":"png",
+            "imgPath":"~/media/images/atalk/scusa.png",
+            "img":null,
+            "audioPath":"~/media/audio/scusa.mp3",
+            "disabled":false
+        }
+       ]
+    },
+    {
+       "id":3,
+       "type":"sub-items",
+       "category":"atalk",
+       "name":"Papa",
+       "imgType":"png",
+       "imgPath":"~/media/images/atalk/papa.png",
+       "img":null,
+       "videoPath":null,
+       "audioPath":"~/media/audio/papa.mp3",
+       "disabled":false,
+       "items": [
+            {
+                "id":301,
+                "type":"sub-items",
+                "category":"verbo",
+                "name":"Dammi",
+                "imgType":"png",
+                "imgPath":"~/media/images/atalk/dammi.png",
+                "img":null,
+                "audioPath":"~/media/audio/dammi.mp3",
+                "disabled":false,
+                "items": [
+                    {
+                        "id":30101,
+                        "type":"sub-items",
+                        "category":"verbo",
+                        "name":"Acqua",
+                        "imgType":"png",
+                        "imgPath":"~/media/images/atalk/acqua.png",
+                        "img":null,
+                        "audioPath":"~/media/audio/acqua.mp3",
+                        "disabled":false,
+                        "items": []
+                    },
+                    {
+                        "id":30102,
+                        "type":"sub-items",
+                        "category":"verbo",
+                        "name":"Succo",
+                        "imgType":"png",
+                        "imgPath":"~/media/images/atalk/succo.png",
+                        "audioPath":"~/media/audio/succo.mp3",
+                        "img":null,
+                        "disabled":false,
+                        "items": []
+                    }
+                ]
+            },
+            {
+               "id":302,
+               "type":"sub-items",
+               "category":"verbo",
+               "name":"Bagno",
+               "imgType":"png",
+               "imgPath":"~/media/images/atalk/bagno.png",
+               "img":null,
+               "audioPath":"~/media/audio/bagno.mp3",
+               "disabled":false,
+               "items": []
+           },
+            {
+                "id":303,
+                "type":"sub-items",
+                "category":"verbo",
+                "name":"Basta",
+                "imgType":"png",
+                "imgPath":"~/media/images/atalk/basta.png",
+                "img":null,
+                "audioPath":"~/media/audio/basta.mp3",
+                "disabled":false
+            },
+            {
+                "id":304,
+                "type":"sub-items",
+                "category":"verbo",
+                "name":"Scusa",
+                "imgType":"png",
+                "imgPath":"~/media/images/atalk/scusa.png",
+                "img":null,
+                "audioPath":"~/media/audio/scusa.mp3",
+                "disabled":false
+            }
+        ]
+    },
+    {
+       "id":4,
+       "type":"video",
+       "category":"fruits",
+       "name":"Mela",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/mela.png",
+       "img":null,
+       "videoPath":"~/media/videos/mela.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":5,
+       "type":"video",
+       "category":"fruits",
+       "name":"Banana",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/banana.png",
+       "img":null,
+       "videoPath":"~/media/videos/banana.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":6,
+       "type":"video",
+       "category":"fruits",
+       "name":"Pera",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/pera.png",
+       "img":null,
+       "videoPath":"~/media/videos/pera.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":7,
+       "type":"video",
+       "category":"fruits",
+       "name":"Uva",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/uva.png",
+       "img":null,
+       "videoPath":"~/media/videos/uva.mp4",
+       "disabled":true
+    
+ },
+    {
+       "id":8,
+       "type":"video",
+       "category":"fruits",
+       "name":"Arancia",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/arancia.png",
+       "img":null,
+       "videoPath":"~/media/videos/arancia.mp4",
+       "disabled":true
+    
+ },
+    {
+       "id":9,
+       "type":"video",
+       "category":"fruits",
+       "name":"Fragola",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/fragola.png",
+       "img":null,
+       "videoPath":"~/media/videos/fragola.mp4",
+       "disabled":true
+    
+ },
+    {
+       "id":10,
+       "type":"video",
+       "category":"fruits",
+       "name":"Limone",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/limone.png",
+       "img":null,
+       "videoPath":"~/media/videos/limone.mp4",
+       "disabled":true
+    
+ },
+    {
+       "id":11,
+       "type":"video",
+       "category":"fruits",
+       "name":"Cilieggie",
+       "imgType":"png",
+       "imgPath":"~/media/images/fruits/ciliegge.png",
+       "img":null,
+       "videoPath":"~/media/videos/ciliegge.mp4",
+       "disabled":true
+    
+ },
+    {
+       "id":12,
+       "type":"video",
+       "category":"animals",
+       "name":"Mucca",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/mucca.png",
+       "img":null,
+       "videoPath":"~/media/videos/mucca.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":13,
+       "type":"video",
+       "category":"animals",
+       "name":"Gatto",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/gatto.png",
+       "img":null,
+       "videoPath":"~/media/videos/gatto.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":14,
+       "type":"video",
+       "category":"animals",
+       "name":"Cane",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/cane.png",
+       "img":null,
+       "videoPath":"~/media/videos/cane.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":15,
+       "type":"video",
+       "category":"animals",
+       "name":"Gallina",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/gallina.png",
+       "img":null,
+       "videoPath":"~/media/videos/gallo.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":16,
+       "type":"video",
+       "category":"animals",
+       "name":"Maiale",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/maiale.png",
+       "img":null,
+       "videoPath":"~/media/videos/maiale.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":17,
+       "type":"video",
+       "category":"animals",
+       "name":"Pecora",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/pecora.png",
+       "img":null,
+       "videoPath":"~/media/videos/pecora.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":18,
+       "type":"video",
+       "category":"animals",
+       "name":"Cavallo",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/cavallo.png",
+       "img":null,
+       "videoPath":"~/media/videos/cavallo.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":19,
+       "type":"video",
+       "category":"animals",
+       "name":"Elefante",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/elefante.png",
+       "img":null,
+       "videoPath":"~/media/videos/elefante.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":20,
+       "type":"video",
+       "category":"animals",
+       "name":"Leone",
+       "imgType":"png",
+       "imgPath":"~/media/images/animals/leone.png",
+       "img":null,
+       "videoPath":"~/media/videos/leone.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":21,
+       "type":"video",
+       "category":"colors",
+       "name":"Rosso",
+       "imgType":"png",
+       "imgPath":"~/media/images/colors/rosso.png",
+       "img":null,
+       "videoPath":"~/media/videos/rosso.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":22,
+       "type":"video",
+       "category":"colors",
+       "name":"Giallo",
+       "imgType":"png",
+       "imgPath":"~/media/images/colors/giallo.png",
+       "img":null,
+       "videoPath":"~/media/videos/giallo.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":23,
+       "type":"video",
+       "category":"colors",
+       "name":"Blu",
+       "imgType":"png",
+       "imgPath":"~/media/images/colors/blu.png",
+       "img":null,
+       "videoPath":"~/media/videos/blu.mp4",
+       "disabled":false
+    
+ },
+    {
+       "id":24,
+       "type":"video",
+       "category":"colors",
+       "name":"Arancio",
+       "imgType":"png",
+       "imgPath":"~/media/images/colors/arancio.png",
+       "img":null,
+       "videoPath":"~/media/videos/arancio.mp4",
+       "disabled":true
+    
+ },
+    {
+       "id":25,
+       "type":"video",
+       "category":"colors",
+       "name":"Verde",
+       "imgType":"png",
+       "imgPath":"~/media/images/colors/verde.png",
+       "img":null,
+       "videoPath":"~/media/videos/verde.mp4",
+       "disabled":false
+    
+ }
+ ]
